@@ -1,0 +1,52 @@
+publications:
+  - image: "assets/img/paper/LRSLAM.png"
+    title: "LRSLAM: Low-rank Representation of Signed Distance Fields in Dense Visual SLAM System"
+    link: "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10364.pdf"
+    authors: "Hongbeen Park, <strong>Minjeong Park</strong>, Giljoo Nam, and Jinkyu Kim"
+    conference: "ECCV 2024, European Conference on Computer Vision"
+    description: >
+      We propose a more efficient visual SLAM model, called LRSLAM, utilizing low-rank tensor decomposition methods.
+      Our approach, leveraging the Six-axis and CP decompositions, achieves better convergence rates, memory efficiency,
+      and reconstruction/localization quality.
+
+  - image: "assets/img/paper/SEEMPAR.png"
+    title: "Visual-Language-based Pedestrian Attribute Recognition via Text-guided Semantic Representation"
+    link: "http://www.dcollection.net/handler/yonsei/000000556870"
+    authors: "<strong>Minjeong Park</strong>"
+    conference: "Master Thesis"
+    description: >
+       This dissertation introduces the Semantic-Enhanced Multimodal Pedestrian Attribute Recognition (SEEM-PAR) framework, designed to predict attributes
+       under challenging image conditions such as occlusion and low illumination.
+       
+  - image: "assets/img/paper/SEEMPAR.png"
+    title: "Multi-Attention based Pedestrian Attribute Recognition with Learnable Multimodal Prompts"
+    link: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11891101"
+    authors: "Minjeong Park, Sangyoun Lee, Ik-Jae Kim, Heeseung Choi"
+    conference: "(Domestic) Summer Annual Conference of IEIE, 2024 Secretariat"
+    description: >
+        For low training cost but sufficient multi-modal represenstation space, we introduce the mluti-modal prompt learning. Specifically, we construct visual and text prompt which consist of learnable parameters, and it go though the fixed image and text encoders, respectively. To focus effectively on the relationship between different modalities, we introduce the XSA module to fuse the tokens.
+
+  - image: "assets/img/paper/bar.png"
+    title: "Neural Image Compression using Block based Adaptive Resizing"
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=yLqyp6UAAAAJ&authuser=1&citation_for_view=yLqyp6UAAAAJ:2osOgNQ5qMEC"
+    authors: "<strong>Minjeong Park</strong>, Yeongwoong Kim, Donghyun Kim, Sung-Chang Lim, Hui Yong Kim"
+    conference: "(Domestic) The Korean Institute of Broadcast and Media Engineers Summer Conference 2022"
+    description: >
+        In this paper, we propose a novel neural image compression algorithm that uses block-based adaptive resizing.
+        The proposed method divides an image into several 2N x 2N blocks and encodes them by addressing two resizing modes.
+        The mode selection is determined based on the rate-distortion cost.
+
+  - image: "assets/img/paper/OVPAR.png"
+    title: "Enhancing Open Vocabulary Pedestrian Attribute Recognition Through Region-Specific Understanding"
+    link: ""
+    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
+    conference: "Under Review"
+    description: >
+       
+
+  - image: "assets/img/paper/ViTA.png"
+    title: "ViTA-PAR: One-to-One Visual and Textual Alignment for Pedestrian Attribute Recognition"
+    link: ""
+    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
+    conference: "Under Review"
+    description: >

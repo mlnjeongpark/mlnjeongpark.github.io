@@ -1,1 +1,0 @@
-# MINDYEOI.github.io

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGB96WSSVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XGB96WSSVV');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="code/script.js"></script>
+    <title>Minjeong Park</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Minjeong Park</h2>
+        </a>
+        <ul>
+          <li><a href="#home;" onclick="fnMove('home')">Home</a></li>
+          <li><a href="#education;" onclick="fnMove('education')">Education</a></li>
+          <li><a href="#publications;" onclick="fnMove('publications')">Publications</a></li>
+          <li><a href="#experience;" onclick="fnMove('experience')">Experience</a></li>
+          <li><a href="#other;" onclick="fnMove('other')">Other</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div id="home"></div>
+      <div class="about">
+      <div class="profile">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <div class="info">
+                  <div class="title">Minjeong Park</div>
+                  <!-- <div class="description">Research Intern</div> -->
+                </div>
+                
+                <div class="title-info">
+                    <div class="justify">
+                    <p>
+                        I am working in the <a href="https://visionai.korea.ac.kr"><strong>Vision & AI Lab</strong></a> at Korea University.
+                        Previously, I worked at <a href="https://www.kist.re.kr/">Korea Institute of Science and Technology (KIST)</a> and <a href="mvp.yonsei.ac.kr">Image and Video Pattern Recognition Lab</a> as a student researcher.
+                        I interned in the <a href="https://vmlab.khu.ac.kr">Visual Media Lab</a> at Kyunghee University and <a href="https://laonpeople.com/eng/main/main.php">Laon People</a>.
+                        I received my M.S in School of Electrical and Electronic Engineering at <a href="https://www.yonsei.ac.kr/sc/index.jsp">Yonsei University</a>.
+                        and B.S in Computer Science and Engineering Department at <a href="https://www.khu.ac.kr">Kyunghee University</a>.
+                    </p>
+                    <p>
+                        My research interests lie in the intersection field of computer vision, especially on the tasks of multimodal representation learning, 
+                        simultaneous localization and mapping (SLAM), person retrieval and pedestrian attribute recognition.
+                    </p>
+                </div>
+                </div>
+              </td>
+
+              <td style="padding:5%;width:60%;max-width:60%;vertical-align:middle;">
+                <img class="selfie" alt="Minjeong Park" src="assets/img/profile.jpg" />
+                <div class="social-layer">
+                    <div class="social-icons">
+                    <ul>        
+                        <li>
+                            <a href="javascript:void(0);" title="Copy Email">
+                                <span class="fa-stack fa-lg" onclick="clipboard_copy()">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                <li>
+                    <a href="/assets/resume_minjeong.pdf" title="resume">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                <a href="https://github.com/MINDYEOI" title="Follow On GitHub">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                </li>
+                </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+              </td>
+            </tr>
+          </tbody></table>
+  </div>
+</div>
+
+<div class="education">
+    <h2 id="education">Education</h2>
+    <div class="zero_pad">
+    <ul class="ul-edu fa-ul" style="margin-top: 1px; margin-bottom: 1px;">
+        <li class="icon-with-text">
+          <i class="fa-li fas fa-graduation-cap"></i>
+          <div class="description">
+              <p class="course">MS in Electrical and Electronic Engineering, 2024</p>
+              <p class="institution">Yonsei University, South Korea</p>
+          </div>
+      </li>
+    </ul>
+    <ul class="ul-edu fa-ul" style="margin-top: -10px; margin-bottom: 1px;">
+        <li class="icon-with-text">
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+                <p class="course">BS in Computer Science and Engineering, 2022</p>
+                <p class="institution">Kyunghee University, South Korea</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+
+<div id="publications"></div>
+<div class="publications">
+    <h2>Publications</h2>
+    <ul class="publication-list" id="publications-list"></ul>
+</div>
+    <h2>Patents</h2>
+    <ul class="publication-list" id="patents-list"></ul>
+</div>
+
+<div id="Awards & Honors"></div>
+<h2>Experience</h2>
+<ul class="publication-list" id="experience-list"></ul>
+</div>
+
+
+
+
+</main> 
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-11-29 04:59:46 +0900">2024</time> Minjeong Park.
+      </span>
+    </footer>
+
+    <script src="code/script.js"></script>
+    <script type="module">
+        import { loadPublications } from './code/publications.js';
+        loadPublications();
+    </script>
+    <script type="module">
+        import { loadPatents } from './code/patents.js';
+        loadPatents();
+    </script>
+    <script type="module">
+        import { loadExperience } from './code/experience.js';
+        loadExperience();
+    </script>
+
+  </body>
+</html>
+
