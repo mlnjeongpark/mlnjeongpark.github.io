@@ -11,7 +11,7 @@ export async function loadExperience() {
         <li>
             <div class="publication-item">
                 <div class="publication-content">
-                    <p class="award-title"> <strong>${pub.title}</strong>, ${pub.authors}</p>
+                    <p class="award-title"> <strong>${pub.title}</strong> </a>, ${pub.authors}</p>
                     <p class="conference">${pub.conference},&nbsp;&nbsp;${pub.date} | ${pub.site}</p>
 
                 </div>

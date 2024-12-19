@@ -12,7 +12,7 @@ export async function loadAward() {
             <div class="publication-item">
                 <div class="publication-content">
                     
-                    <p class="award-title"> <strong>${pub.title}</strong>, ${pub.authors}</p>
+                    <p class="award-title"> <strong>${pub.title}</strong></a>, ${pub.authors}</p>
                     <p class="date">${pub.date}</p>
                 </div>
             </div>
