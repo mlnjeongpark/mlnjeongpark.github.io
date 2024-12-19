@@ -18,7 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="code/script.js"></script>
     <title>Minjeong Park</title>
-
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- react-rotating-text -->
+    <script src="https://cdn.jsdelivr.net/npm/react-simple-rotating-text@0.0.7/dist/index.umd.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/react-simple-rotating-text@0.0.7/dist/index.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
@@ -41,83 +47,79 @@
           <h2 class="nav-title">Minjeong Park</h2>
         </a>
         <ul>
-          <li><a href="#home;" onclick="fnMove('home')">Home</a></li>
-          <li><a href="#education;" onclick="fnMove('education')">Education</a></li>
-          <li><a href="#publications;" onclick="fnMove('publications')">Publications</a></li>
-          <li><a href="#experience;" onclick="fnMove('experience')">Experience</a></li>
-          <li><a href="#other;" onclick="fnMove('other')">Other</a></li>
+          <li><a href="/#about;" onclick="fnMove('about')">About</a></li>
+          <li><a href="/#publications;" onclick="fnMove('publications')">Publications</a></li>
+          <li><a href="/#experience;" onclick="fnMove('experience')">Experience</a></li>
+          <li><a href="/#award;" onclick="fnMove('award')">Honors & Awards</a></li>
+          <li><a href="/assets/resume_minjeong.pdf">Resume</a></li>
+          <!-- <li><a href="/#">Other</a>         -->
+          </li>
+          
         </ul>
     </div>
   </nav>
 
-    <main>
-      <div id="home"></div>
+    <main>  
+      <div id="about"></div>
       <div class="about">
-      <div class="profile">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <div class="info">
-                  <div class="title">Minjeong Park</div>
-                  <!-- <div class="description">Research Intern</div> -->
-                </div>
-                
-                <div class="title-info">
-                    <div class="justify">
-                    <p>
-                        I am working in the <a href="https://visionai.korea.ac.kr"><strong>Vision & AI Lab</strong></a> at Korea University.
-                        Previously, I worked at <a href="https://www.kist.re.kr/">Korea Institute of Science and Technology (KIST)</a> and <a href="mvp.yonsei.ac.kr">Image and Video Pattern Recognition Lab</a> as a student researcher.
-                        I interned in the <a href="https://vmlab.khu.ac.kr">Visual Media Lab</a> at Kyunghee University and <a href="https://laonpeople.com/eng/main/main.php">Laon People</a>.
-                        I received my M.S in School of Electrical and Electronic Engineering at <a href="https://www.yonsei.ac.kr/sc/index.jsp">Yonsei University</a>.
-                        and B.S in Computer Science and Engineering Department at <a href="https://www.khu.ac.kr">Kyunghee University</a>.
-                    </p>
-                    <p>
-                        My research interests lie in the intersection field of computer vision, especially on the tasks of multimodal representation learning, 
-                        simultaneous localization and mapping (SLAM), person retrieval and pedestrian attribute recognition.
-                    </p>
-                </div>
-                </div>
-              </td>
-
-              <td style="padding:5%;width:60%;max-width:60%;vertical-align:middle;">
-                <img class="selfie" alt="Minjeong Park" src="assets/img/profile.jpg" />
-                <div class="social-layer">
-                    <div class="social-icons">
-                    <ul>        
-                        <li>
-                            <a href="javascript:void(0);" title="Copy Email">
-                                <span class="fa-stack fa-lg" onclick="clipboard_copy()">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+        <div class="profile">
+          <div class="contents">
+            <img class="selfie" alt="Minjeong Park" src="assets/img/profile.jpg" />
+            <div class="social-layer">
+              <ul>
                 <li>
-                    <a href="/assets/resume_minjeong.pdf" title="resume">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-file fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-
-                <li>
-                <a href="https://github.com/MINDYEOI" title="Follow On GitHub">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  <a href="javascript:void(0);" title="Copy Email">
+                    <span class="fa-stack fa-lg" onclick="clipboard_copy()">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                     </span>
-                </a>
+                  </a>
                 </li>
-                </ul>
-                    </div>
-                    </div>
-                </div>
-                </div>
+                <li>
+                  <a href="/assets/resume_minjeong.pdf" title="resume">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/MINDYEOI" title="Follow On GitHub">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              </td>
-            </tr>
-          </tbody></table>
+          <div class="info">
+            <div id="hello" class="section">
+              Hello! I'm &nbsp;<div class="title">Minjeong Park.</div></div>
+            <div id="hello" class="section">
+              I'm interested in&nbsp;<span id="typing-effect"></span><span class="cursor">|</span>
+              <!-- <div class="scroll-arrow" onclick="fnMove('about')">
+                  ▾
+              </div> -->
+          </div>
+            <div class="title-info">
+              <p>
+                I am working in the <a href="https://visionai.korea.ac.kr"><strong>Vision & AI Lab</strong></a> at Korea University.
+                Previously, I worked at the <a href="https://www.kist.re.kr/">Korea Institute of Science and Technology (KIST)</a> as a student researcher 
+                and <a href="http://mvp.yonsei.ac.kr">Image and Video Pattern Recognition Lab</a> at Yonsei University as a graduate research assistant.
+              </p>
+              <p>
+                My interests lie in the field of computer vision, machine learning, and its applications. Most recently, my
+                research focuses on two main directions: (1) Ensuring robustness to distribution changes and unknown
+                classes for real-world scenarios and (2) Developing an innovative vision algorithm to address
+                diverse challenges across the representations in 2D and 3D.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -128,7 +130,7 @@
         <li class="icon-with-text">
           <i class="fa-li fas fa-graduation-cap"></i>
           <div class="description">
-              <p class="course">MS in Electrical and Electronic Engineering, 2024</p>
+              <p class="course">M.S. in Electrical and Electronic Engineering, 2024</p>
               <p class="institution">Yonsei University, South Korea</p>
           </div>
       </li>
@@ -137,7 +139,7 @@
         <li class="icon-with-text">
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-                <p class="course">BS in Computer Science and Engineering, 2022</p>
+                <p class="course">B.E. in Computer Science and Engineering, 2022</p>
                 <p class="institution">Kyunghee University, South Korea</p>
             </div>
         </li>
@@ -154,15 +156,23 @@
     <ul class="publication-list" id="patents-list"></ul>
 </div>
 
-<div id="Awards & Honors"></div>
-<h2>Experience</h2>
+<div id="experience"></div>
+<h2>Research Experience</h2>
 <ul class="publication-list" id="experience-list"></ul>
+</div>
+
+<div id="award"></div>
+<h2>Awards & Honors</h2>
+<ul class="publication-list" id="award-list"></ul>
 </div>
 
 
 
-
 </main> 
+
+
+
+
 
     <footer>
       <span>
@@ -183,7 +193,45 @@
         import { loadExperience } from './code/experience.js';
         loadExperience();
     </script>
+        <script type="module">
+          import { loadAward } from './code/award.js';
+          loadAward();
+    </script>
 
+
+      <script>
+        const items = ['Computer Vision. ', 'Machine Learning. ', 'Deep Learning. ', 'Web Development. ', 'iOS. '];
+        let index = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingEffect = document.getElementById('typing-effect');
+    
+        function typeEffect() {
+          const currentText = items[index];
+          const displayedText = isDeleting
+            ? currentText.substring(0, charIndex--)
+            : currentText.substring(0, charIndex++);
+    
+          typingEffect.textContent = displayedText;
+    
+          if (!isDeleting && charIndex === currentText.length) {
+            // 글자 다 쳤으면 1초 대기 후 삭제 모드로 전환
+            isDeleting = true;
+            setTimeout(typeEffect, 600);
+          } else if (isDeleting && charIndex === 0) {
+            // 글자 다 지웠으면 다음 단어로 넘어감
+            isDeleting = false;
+            index = (index + 1) % items.length;
+            setTimeout(typeEffect, 500);
+          } else {
+            // 타이핑 속도 조절
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeEffect, typingSpeed);
+          }
+        }
+    
+        typeEffect(); // 초기 실행
+      </script>
   </body>
 </html>
 

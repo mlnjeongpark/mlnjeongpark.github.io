@@ -33,3 +33,4 @@ function clipboard_copy() {
             console.error(copyText);
         });
 }
+

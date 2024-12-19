@@ -39,13 +39,61 @@ pre,code{font-family:Menlo,Monaco,monospace}code{background-color:#f9f9f9;border
 
 .about .profile{text-align:center;margin-top:3%}
 
-.about .profile .selfie{display:block;width:200px;margin:0 auto;border-radius:100%}
-.about .profile .info{margin-top:1.5%;margin-bottom:2%}
+/*.about .profile .selfie{display:block;width:200px;margin:0 auto;border-radius:100%}
+.about .profile .info{margin-top:1.5%;margin-bottom:2%} */
 .about .profile .info .title{font-size:1.8rem;font-weight:bold;color:black}
 .about .profile .info .description{font-size:1rem;color:gray}
 .about-icon{margin-left:1.3rem;line-height:2rem}
 .about-icon-text{margin-left:0.8rem}
 
+.about .profile {
+    display: flex;
+    flex-direction: column; /* 기본적으로 세로 정렬 */
+    align-items: center;
+  }
+  
+  .about .profile .info {
+    text-align: justify;
+    margin: 1.5rem 0;
+  }
+  
+  .about .profile .contents {
+    display: flex;
+    flex-direction: column; /* Selfie와 Social Layer를 세로 정렬 */
+    align-items: center;
+  }
+  
+  .about .profile .selfie {
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .social-layer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem; /* 아이템 간 간격 */
+  }
+
+@media (min-width: 600px) {
+    .about .profile {
+      flex-direction: row; /* 600px 이상에서는 가로 정렬 */
+      justify-content: center;
+    }
+  
+    .about .profile .info {
+      order: 2; /* 왼쪽으로 배치 */
+      max-width: 60%;
+    }
+  
+    .about .profile .contents {
+      order: 1; /* 오른쪽으로 배치 */
+      margin-right: 2rem;
+    }
+  }
+  
 
 .portfolio-item{border-bottom:1px solid #e5e5e5;color:#555;display:inline-block;padding:2rem 0}
 .portfolio-item:hover .portfolio-line,.portfolio-item:focus .portfolio-line{width:5rem}.portfolio-item:last-child{border:0}
@@ -209,6 +257,19 @@ ul.ul-contact li .description p {
     margin: 0 0 10px 0;
 }
 
+.publication-content .award-title {
+    /* font-size: 18px; */
+    margin: 0 0 5px 0;
+    text-align: justify;
+}
+
+.publication-content .date {
+    font-size: 14px;
+    font-style: italic;
+    color: #888;
+    margin: 0 0 5px 0;
+}
+
 .publication-content .link {
     font-size: 14px;
     color: #007bff;
@@ -226,4 +287,86 @@ ul.ul-contact li .description p {
     margin: 10px 0 10px 0;
     text-align: justify;
 
+}
+
+/* Rotating text */
+#rotating-text-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+.react-rotating-text-cursor {
+animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
+}
+
+@keyframes blinking-cursor {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+#typing-effect {
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .cursor {
+    display: inline;
+    font-weight: normal;
+    font-size: 30px;
+    animation: blink 0.8s steps(2, start) infinite;
+  }
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+/* Scroll */
+
+.section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* height: 100vh;
+    width: 100%; */
+    text-align: left;
+    position: relative;
+}
+
+#hello {
+    background-color: white;
+    color: black;
+    font-size: 20px
+}
+
+#about {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* 스크롤 화살표 */
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
