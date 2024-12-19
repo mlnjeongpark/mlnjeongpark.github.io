@@ -21,7 +21,7 @@ publications:
   - image: "assets/img/paper/SEEMPAR.png"
     title: "Multi-Attention based Pedestrian Attribute Recognition with Learnable Multimodal Prompts"
     link: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11891101"
-    authors: "Minjeong Park, Sangyoun Lee, Ik-Jae Kim, Heeseung Choi"
+    authors: "<strong>Minjeong Park</strong>, Sangyoun Lee, Ik-Jae Kim, Heeseung Choi"
     conference: "(Domestic) Summer Annual Conference of IEIE, 2024 Secretariat"
     description: >
         For low training cost but sufficient multi-modal represenstation space, we introduce the mluti-modal prompt learning. Specifically, we construct visual and text prompt which consist of learnable parameters, and it go though the fixed image and text encoders, respectively. To focus effectively on the relationship between different modalities, we introduce the XSA module to fuse the tokens.
