@@ -363,20 +363,6 @@ animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
     animation: blink 0.8s steps(2, start) infinite;
   }}
 
-  @media (max-width: 500px){.about .profile .info .title{font-size:1.1em;font-weight:bold;color:black}}
-  @media (max-width: 500px){#hello{font-size:1.1em; color:black}}
-  @media (max-width: 500px){#typing-effect {
-      display: inline;
-      font-weight: bold;
-      font-size: 1.1em;
-    }}
-    @media (max-width: 500px){.cursor {
-      display: inline;
-      font-weight: normal;
-      font-size: 1.3em;
-      animation: blink 0.8s steps(2, start) infinite;
-    }}
-
 #about {
     background-color: #1a1a1a;
     color: white;
