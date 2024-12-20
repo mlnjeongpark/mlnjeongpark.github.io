@@ -349,19 +349,19 @@ animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
     color: black;
     font-size: 1.5em
 }
-@media (max-width: 900px){.about .profile .info .title{font-size:3vw;font-weight:bold;color:black}}
-@media (max-width: 900px){#hello{font-size:3vw; color:black}}
-@media (max-width: 900px){#typing-effect {
+@media (max-width: 420px){.about .profile .info .title{font-size:18px;font-weight:bold;color:black}}
+@media (max-width: 420px){#hello{font-size:15px; color:black}}
+@media (max-width: 420px){#typing-effect {
     display: inline;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 15px;
   }}
-  @media (max-width: 900px){.cursor {
-    display: inline;
-    font-weight: normal;
-    font-size: 5vw;
-    animation: blink 0.8s steps(2, start) infinite;
-  }}
+@media (max-width: 420px){.cursor {
+display: inline;
+font-weight: normal;
+font-size: 2em;
+animation: blink 0.8s steps(2, start) infinite;
+}}
 
 #about {
     background-color: #1a1a1a;
