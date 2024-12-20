@@ -33,7 +33,8 @@ a{color:#1c5596;text-decoration:none; }
   }
 
 blockquote{border-left:0.25rem solid #e5e5e5;color:#979797;margin:.8rem 0;padding:.5rem 1rem}
-blockquote p:last-child{margin-bottom:0}@media (min-width: 730px){blockquote{padding:0 5rem 0 1.25rem}}
+blockquote p:last-child{margin-bottom:0}
+@media (min-width: 730px){blockquote{padding:0 5rem 0 1.25rem}}
 img{display:block;margin:0 0 1rem;max-width:100%}td{vertical-align:top}
 pre,code{font-family:Menlo,Monaco,monospace}code{background-color:#f9f9f9;border-radius:3px;color:#bf616a;font-size:85%;padding:.25em .5em}pre{margin:0 0 1rem}pre code{background-color:transparent;color:inherit;font-size:100%;padding:0}.highlight{background-color:#f9f9f9;border-radius:3px;line-height:1.4;margin:0 0 1rem;padding:1rem}.highlight pre{margin-bottom:0;overflow-x:auto}.highlight .lineno{color:#aaa;display:inline-block;padding:0 .75rem 0 .25rem;-webkit-user-select:none;-moz-user-select:none;user-select:none}.highlight .hll{background-color:#ffc}.highlight .c{color:#999}.highlight .err{color:#a00;background-color:#faa}.highlight .k{color:#069}.highlight .o{color:#555}.highlight .cm{color:#09f;font-style:italic}.highlight .cp{color:#099}.highlight .c1{color:#999}.highlight .cs{color:#999}.highlight .gd{background-color:#fcc;border:1px solid #c00}.highlight .ge{font-style:italic}.highlight .gr{color:red}.highlight .gh{color:#030}.highlight .gi{background-color:#cfc;border:1px solid #0c0}.highlight .go{color:#aaa}.highlight .gp{color:#009}.highlight .gu{color:#030}.highlight .gt{color:#9c6}.highlight .kc{color:#069}.highlight .kd{color:#069}.highlight .kn{color:#069}.highlight .kp{color:#069}.highlight .kr{color:#069}.highlight .kt{color:#078}.highlight .m{color:#f60}.highlight .s{color:#d44950}.highlight .na{color:#4f9fcf}.highlight .nb{color:#366}.highlight .nc{color:#0a8}.highlight .no{color:#360}.highlight .nd{color:#99f}.highlight .ni{color:#999}.highlight .ne{color:#c00}.highlight .nf{color:#c0f}.highlight .nl{color:#99f}.highlight .nn{color:#0cf}.highlight .nt{color:#2f6f9f}.highlight .nv{color:#033}.highlight .ow{color:#000}.highlight .w{color:#bbb}.highlight .mf{color:#f60}.highlight .mh{color:#f60}.highlight .mi{color:#f60}.highlight .mo{color:#f60}.highlight .sb{color:#c30}.highlight .sc{color:#c30}.highlight .sd{color:#c30;font-style:italic}.highlight .s2{color:#c30}.highlight .se{color:#c30}.highlight .sh{color:#c30}.highlight .si{color:#a00}.highlight .sx{color:#c30}.highlight .sr{color:#3aa}.highlight .s1{color:#c30}.highlight .ss{color:#fc3}.highlight .bp{color:#366}.highlight .vc{color:#033}.highlight .vg{color:#033}.highlight .vi{color:#033}.highlight .il{color:#f60}.css .o,.css .o+.nt,.css .nt+.nt{color:#999}.pagination{border-top:0.5px solid #e5e5e5;font-family:"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;padding-top:2rem;position:relative;text-align:center}.pagination span{color:#353535;font-size:1.1rem}.pagination .top{-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;transition:all 0.3s ease-out;color:#555;font-size:1.1rem;opacity:.6}.pagination .top:hover{opacity:1}.pagination .next{-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;transition:all 0.3s ease-out;color:#555;font-size:0.9rem;position:absolute}.pagination .next:hover,.pagination .next:focus{opacity:.6;text-decoration:none}.pagination .left{left:0}.pagination .right{right:0}
 
@@ -311,7 +312,7 @@ animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
     font-weight: bold;
     font-size: 20px;
   }
-  .cursor {
+.cursor {
     display: inline;
     font-weight: normal;
     font-size: 30px;
@@ -337,12 +338,25 @@ animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
     text-align: left;
     position: relative;
 }
-
 #hello {
     background-color: white;
     color: black;
-    font-size: 20px
+    font-size: 1.5em
 }
+@media (max-width: 730px){.about .profile .info .title{font-size:1.3rem;font-weight:bold;color:black}}
+@media (max-width: 730px){#hello{font-size:1.0rem;color:black}}
+@media (max-width: 730px){#typing-effect {
+    display: inline;
+    font-weight: bold;
+    font-size: 1.1rem
+  }}
+  @media (max-width: 730px){.cursor {
+    display: inline;
+    font-weight: normal;
+    font-size: 1.3rem;
+    animation: blink 0.8s steps(2, start) infinite;
+  }}
+
 
 #about {
     background-color: #1a1a1a;

@@ -205,7 +205,6 @@
             : currentText.substring(0, charIndex++);
     
           typingEffect.textContent = displayedText;
-    
           if (!isDeleting && charIndex === currentText.length) {
             // 글자 다 쳤으면 1초 대기 후 삭제 모드로 전환
             isDeleting = true;
@@ -214,7 +213,7 @@
             // 글자 다 지웠으면 다음 단어로 넘어감
             isDeleting = false;
             index = (index + 1) % items.length;
-            setTimeout(typeEffect, 500);
+            setTimeout(typeEffect, 100);
           } else {
             // 타이핑 속도 조절
             const typingSpeed = isDeleting ? 50 : 100;
