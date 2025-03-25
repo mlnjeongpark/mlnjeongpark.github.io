@@ -9,6 +9,21 @@ publications:
       Our approach, leveraging the Six-axis and CP decompositions, achieves better convergence rates, memory efficiency,
       and reconstruction/localization quality.
 
+  # - image: "assets/img/paper/OVPAR.png"
+  #   title: "Enhancing Open Vocabulary Pedestrian Attribute Recognition Through Region-Specific Understanding"
+  #   link: ""
+  #   authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
+  #   conference: "arXiv prepreint"
+  #   description: >
+       
+
+  # - image: "assets/img/paper/ViTA.png"
+  #   title: "ViTA-PAR: One-to-One Visual and Textual Alignment for Pedestrian Attribute Recognition"
+  #   link: ""
+  #   authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
+  #   conference: "arXiv prepreint"
+  #   description: >
+
   - image: "assets/img/paper/SEEMPAR.png"
     title: "Visual-Language-based Pedestrian Attribute Recognition via Text-guided Semantic Representation"
     link: "http://www.dcollection.net/handler/yonsei/000000556870"
@@ -35,18 +50,3 @@ publications:
         In this paper, we propose a novel neural image compression algorithm that uses block-based adaptive resizing.
         The proposed method divides an image into several 2N x 2N blocks and encodes them by addressing two resizing modes.
         The mode selection is determined based on the rate-distortion cost.
-
-  - image: "assets/img/paper/OVPAR.png"
-    title: "Enhancing Open Vocabulary Pedestrian Attribute Recognition Through Region-Specific Understanding"
-    link: ""
-    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
-    conference: "arXiv prepreint"
-    description: >
-       
-
-  - image: "assets/img/paper/ViTA.png"
-    title: "ViTA-PAR: One-to-One Visual and Textual Alignment for Pedestrian Attribute Recognition"
-    link: ""
-    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
-    conference: "arXiv prepreint"
-    description: >
