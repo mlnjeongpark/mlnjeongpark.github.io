@@ -11,11 +11,9 @@ export async function loadPatents() {
         listItem.innerHTML = `
         <li>
             <div class="publication-item">
-               <!-- <img src="${pub.image}" alt="Paper Image" class="paper-image"> --!>
                 <div class="publication-content">
                     <p class="title">
                             <strong>${pub.title}</strong>
-                        </a>
                     </p>
                     <p class="authors">${pub.authors}</p>
                     <p class="conference">${pub.conference}</p>

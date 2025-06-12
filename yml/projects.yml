@@ -1,0 +1,5 @@
+projects:
+  - title: "ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+    link: "../projects/ViTA-PAR"
+    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
+    conference: "IEEE International Conference on Image Processing (<b>ICIP</b>), 2025"

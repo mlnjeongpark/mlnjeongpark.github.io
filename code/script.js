@@ -4,7 +4,7 @@ function fnMove(sectionName) {
     if (target) {
         const navHeight = document.querySelector(".nav").offsetHeight; 
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset; 
-        const offsetPosition = targetPosition - navHeight-10; 
+        const offsetPosition = targetPosition - navHeight; 
 
         window.scrollTo({
             top: offsetPosition,
@@ -17,12 +17,12 @@ function fnMove(sectionName) {
 
 
 function clipboard_copy() {
-    const copyText = "mjminjeongpark@gmail.com"; // Text to copy
+    const copyText = "minjngpark@gmail.com"; // Text to copy
     navigator.clipboard.writeText(copyText)
         .then(() => {
             Swal.fire({
                 icon: 'success',
-                text: 'My email address has been copied to your clipboard!',
+                text: 'Copied to clipboard!',
                 customClass: { 
                     popup: "swal2-border-radius",
                     confirmButton: "swal2-custom-button"

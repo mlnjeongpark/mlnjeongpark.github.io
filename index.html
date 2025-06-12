@@ -24,7 +24,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
@@ -42,9 +43,8 @@
         <ul>
           <li><a href="/#about;" onclick="fnMove('about')">About</a></li>
           <li><a href="/#publications;" onclick="fnMove('publications')">Publications</a></li>
-          <li><a href="/#experience;" onclick="fnMove('experience')">Experience</a></li>
           <li><a href="/#award;" onclick="fnMove('award')">Honors & Awards</a></li>
-          <li><a href="/assets/resume_minjeong.pdf">Resume</a></li>
+          <li><a href="./projects">Projects</a></li>
           <!-- <li><a href="/#">Other</a>         </li> -->
           
         </ul>
@@ -59,32 +59,45 @@
             <img class="selfie" alt="Minjeong Park" src="assets/img/profile.jpg" />
             <div class="social-layer">
               <ul>
-                <li>
+                <!-- <li>
                   <a href="javascript:void(0);" title="Copy Email">
                     <span class="fa-stack fa-lg" onclick="clipboard_copy()">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                     </span>
                   </a>
-                </li>
+                </li> -->
+                <!-- CV Resume -->
                 <li>
-                  <a href="/assets/resume_minjeong.pdf" title="resume">
+                  <a href="assets/resume_minjeong.pdf" title="CV">
                     <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                      <i class="fa-solid fa-file-lines fa-xl"></i>
+                    </span>
+                  </a>
+                </li>
+                <!-- Google Scholar -->
+                <li>
+                  <a href="https://scholar.google.com/citations?user=YOUR_USER_ID" title="Google Scholar" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa-solid fa-graduation-cap fa-xl"></i>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/MINDYEOI" title="Follow On GitHub">
+                  <a href="https://github.com/mlnjeongpark" title="GitHub">
+                    <i class="fa-brands fa-square-github fa-2xl"></i>
+                  </a>
+                </li>
+                <!-- LinkedIn -->
+                <li>
+                  <a href="https://www.linkedin.com/in/YOUR_USERNAME/" title="LinkedIn" target="_blank">
                     <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      <i class="fa-brands fa-linkedin fa-xl"></i>
                     </span>
                   </a>
                 </li>
               </ul>
-            </div>
+            </div>  
           </div>
 
           <div class="info">
@@ -98,15 +111,31 @@
           </div>
             <div class="title-info">
               <p>
-                I am working in the <a href="https://visionai.korea.ac.kr"><strong>Vision & AI Lab</strong></a> at Korea University.
-                Previously, I worked at the <a href="https://www.kist.re.kr/">Korea Institute of Science and Technology (KIST)</a> as a student researcher 
-                and <a href="http://mvp.yonsei.ac.kr">Image and Video Pattern Recognition Lab</a> at Yonsei University as a graduate research assistant.
-              </p>
-              <p>
                 My interests lie in the field of computer vision, machine learning, and its applications. Most recently, my
                 research focuses on two main directions: (1) Ensuring robustness to distribution changes and unknown
                 classes for real-world scenarios and (2) Developing an innovative vision algorithm to address
                 diverse challenges across the representations in 2D and 3D.
+              </p>
+              <p>
+                <span style="font-size: 0.9rem;">
+                <i> <b> I’m always happy to chat</b> whether it's about research, career, or simply exchanging ideas.
+                  <br>Feel free to get in touch!</i> 😊 
+                  <span style="font-size: 1.2rem;">📧</span>
+              <b>
+              </span>
+              minjngpark [at] gmail.com
+                <a onclick="clipboard_copy()" style="cursor: pointer; font-size: 0.8rem;"> [Copy here!]</a>
+              </b>
+              <br><br>
+              <span style="font-size: 0.9rem;">
+                 🎓</span>
+              <span style="font-size: 0.8rem;">
+                B.E. in Computer Science and Engineering at Kyung Hee University
+              </span><br>
+              <span style="font-size: 0.9rem;">
+                 🎓 </span>
+              <span style="font-size: 0.8rem;">
+                M.S. in Electrical and Electronic Engineering at Yonsei University </span>
               </p>
             </div>
           </div>
@@ -115,60 +144,43 @@
   </div>
 </div>
 
-<div class="education">
-    <h2 id="education">Education</h2>
-    <div class="zero_pad">
-    <ul class="ul-edu fa-ul" style="margin-top: 1px; margin-bottom: 1px;">
-        <li class="icon-with-text">
-          <i class="fa-li fas fa-graduation-cap"></i>
-          <div class="description">
-              <p class="course">M.S. in Electrical and Electronic Engineering, 2024</p>
-              <p class="institution">Yonsei University, South Korea</p>
-          </div>
-      </li>
-    </ul>
-    <ul class="ul-edu fa-ul" style="margin-top: -10px; margin-bottom: 1px;">
-        <li class="icon-with-text">
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-                <p class="course">B.E. in Computer Science and Engineering, 2022</p>
-                <p class="institution">Kyunghee University, South Korea</p>
-            </div>
-        </li>
-    </ul>
-</div>
+
+<div class="publications">
+  <div class="section-title">
+  <h2>Publications</h2>
 </div>
 
-<div id="publications"></div>
-<div class="publications">
-    <h2>Publications</h2>
+  <div class="section-content">
     <ul class="publication-list" id="publications-list"></ul>
+  </div>
 </div>
-    <h2>Patents</h2>
+
+<!-- <div class="section-title">
+<h2>Patents</h2>
+</div>
     <ul class="publication-list" id="patents-list"></ul>
 </div>
 
 <div id="experience"></div>
-<h2>Research Experience</h2>
-<ul class="publication-list" id="experience-list"></ul>
+<div class="section-title">
+  <h2>Research Experience</h2>
 </div>
+<ul class="publication-list" id="experience-list"></ul>
+</div> -->
 
 <div id="award"></div>
-<h2>Awards & Honors</h2>
+<div class="section-title">
+  <h2>Awards & Honors</h2>
+</div>
 <ul class="publication-list" id="award-list"></ul>
 </div>
 
 
 
 </main> 
-
-
-
-
-
     <footer>
       <span>
-        &copy; <time datetime="2024-11-29 04:59:46 +0900">2024</time> Minjeong Park.
+        &copy; Minjeong Park.
       </span>
     </footer>
 
