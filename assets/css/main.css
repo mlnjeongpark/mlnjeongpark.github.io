@@ -228,6 +228,7 @@ ul.ul-contact li .description p {
 .publication-list {
     list-style-type: none;
     padding: 0;
+    
 }
 
 .publication-list li {
@@ -505,15 +506,20 @@ animation: blink 0.8s steps(2, start) infinite;
         text-align: center;
         gap: 0px;
     }
-
     .publication-content {
         padding: 0 0 0 0; /* 위쪽 1rem, 좌우 0, 아래쪽 1rem */
+        
     }
-    
 
     .publication-content .title,
     .publication-content .authors,
-    .publication-content .conference {
+    .publication-content .conference,
+    .publication-content .award-title,
+    .publication-content .date {
         text-align: center; /* 모바일에서 가운데 정렬 */
     }
+    ul > li {
+        display: flex;
+        justify-content: center;
+      }
 }

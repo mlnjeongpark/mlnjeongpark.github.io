@@ -9,14 +9,14 @@ export async function loadAward() {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
         <li>
-            <div class="publication-item">
-                <div class="publication-content">
-                    
-                    <p class="award-title"> <strong>${pub.title}</strong></a>, ${pub.authors}</p>
-                    <p class="date">${pub.date}</p>
-                </div>
-            </div>
-        </li>
+        <div class="publication-item">
+          <div class="publication-content">
+            <p class="award-title"><strong>${pub.title}</strong></p>
+            <p class="authors">${pub.authors}</p>
+            <p class="date">${pub.date}</p>
+          </div>
+        </div>
+      </li>
         `;
         publicationsList.appendChild(listItem);
     });
