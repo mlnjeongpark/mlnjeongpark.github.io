@@ -1,0 +1,11 @@
+workshop:
+  - image: "assets/img/paper/PACS.png"
+    title: "Fast and Precise Multimodal SpatioTemporal Calibration
+via Periodic-Activated 2D Gaussian Splatting"
+    link: ""
+    authors: "Hongbeen Park*, <strong>Minjeong Park*</strong>,  Sunpil Kim, Jinkyu Kim, Jung Hyun Lee"
+    conference: "International Conference on Computer Vision (<strong>ICCV</strong>) Wild3D Workshop, 2025"
+    label: "ICCVW Wild3D 2025"
+    code:
+    project: 
+    description: >

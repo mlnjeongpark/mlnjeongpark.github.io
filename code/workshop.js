@@ -1,11 +1,10 @@
-export async function loadPublications() {
-    const response = await fetch('yml/publications.yml');
+export async function loadWorkshop() {
+    const response = await fetch('yml/workshop.yml');
     const yamlText = await response.text();
     const data = jsyaml.load(yamlText);
 
-    const publicationsList = document.getElementById('publications-list');
-
-    data.publications.forEach(pub => {
+    const publicationsList = document.getElementById('workshop-list');
+    data.workshop.forEach(pub => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
         <li class="publication-hover">
@@ -23,9 +22,8 @@ export async function loadPublications() {
                     <p class="authors">${pub.authors}</p>
                     <p class="conference">${pub.conference}
                     ${pub.oral
-                        ? `<span> <b><i><mark style="background: #FADF05!important"> Oral</mark></i></b> </span>`
-                        : `<span> </span>
-                        `}
+                        ? `<span> <b><i><mark>Oral  </mark></i></b> </span>`
+                        : `<span> </span>`}
                     </p>
                     <span style="font-size: 0.9rem;">
                     <a href="${pub.link}" target="_blank"> [Paper] </a> 

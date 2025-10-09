@@ -11,6 +11,8 @@
         gtag('config', 'G-XGB96WSSVV');
     </script>
 
+    <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=72fys-Is8GfzmT8QS9mHrKdqaZo6yeGLIqa3t6oZDyA"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -123,7 +125,7 @@
                   <span style="font-size: 1.2rem;">📧</span>
               <b>
               </span>
-              minjngpark [at] gmail.com
+              minjngpark [at] gmail [dot] com
                 <a onclick="clipboard_copy()" style="cursor: pointer; font-size: 0.8rem;"> [Copy here!]</a>
               </b>
               <br><br>
@@ -152,6 +154,18 @@
 
   <div class="section-content">
     <ul class="publication-list" id="publications-list"></ul>
+  </div>
+</div>
+
+
+<div id="publications"></div>
+<div class="publications">
+  <div class="section-title">
+  <h2>Workshop</h2>
+</div>
+
+  <div class="section-content">
+    <ul class="publication-list" id="workshop-list"></ul>
   </div>
 </div>
 
@@ -190,6 +204,10 @@
         loadPublications();
     </script>
     <script type="module">
+        import { loadWorkshop } from './code/workshop.js';
+        loadWorkshop();
+    </script>
+    <script type="module">
         import { loadPatents } from './code/patents.js';
         loadPatents();
     </script>
@@ -204,7 +222,7 @@
 
 
       <script>
-        const items = ['Computer Vision. ', 'Machine Learning. ', 'Deep Learning. ', 'Web Development. ', 'iOS. '];
+        const items = ['Computer Vision. ', 'Machine Learning. ', 'Language Models. ', 'Multimodal Representation. '];
         let index = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -235,6 +253,7 @@
     
         typeEffect(); // 초기 실행
       </script>
+      
   </body>
 </html>
 

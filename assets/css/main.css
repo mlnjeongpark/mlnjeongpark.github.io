@@ -429,15 +429,15 @@ animation: blink 0.8s steps(2, start) infinite;
   }
   
   .image-label {
-    font-family:"Libre Baskerville";
+    /* font-family:"Libre Baskerville"; */
     position: absolute;
     top: 5px;
     left: 8px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: white;
-    background-color: #19238399; /* 반투명 배경 */
+    background-color: #00000099; /* 반투명 배경 */
     padding: 2px 5px;
-    border-radius: 3px;
+    border-radius: 0px;
     pointer-events: none;
   }
   
