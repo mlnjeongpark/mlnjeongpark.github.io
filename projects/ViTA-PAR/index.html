@@ -1,1 +1,386 @@
-Under Construction...!
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ViTA-PAR</title>
+
+    <!-- Favicon references -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="apple-touch-icon" href="favicon.jpg">
+
+    <meta
+        content="ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+        name="description" />
+    <meta
+        content="ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+        property="og:title" />
+    <meta
+        content="ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+        property="og:description" />
+    <meta
+        content="ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+        property="twitter:title" />
+    <meta
+        content="ViTA-PAR: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition"
+        property="twitter:description" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link href="style.css?v=v3" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#comparison">Experiments</a></li>
+                    <!-- <li><a href="#visualization">Visualization</a></li> -->
+                    <li><a href="#citation">Citation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="container">
+            <div class="title-row">
+                <h1 class="title"><span class="gradient-text">💊ViTA-PAR</span>: Visual and Textual Attribute Alignment with Attribute Prompting for Pedestrian Attribute Recognition</h1>
+                <h1 class="subtitle">ICIP 2025</h1>
+                <h3 class="subtitle" style="font-size: 1rem;">Oral Presentation</h3>
+            </div>
+            <div class="base-row author-row">
+                <div class="base-col author-col">
+                    <a href="https://mlnjeongpark.github.io" target="_blank" class="author-text">
+                        Minjeong Park 
+                        <!-- <sup>1,2</sup> -->
+                    </a>
+                </div>
+                <div class="base-col author-col">
+                    <a href="https://qkrghdqls1.github.io" target="_blank" class="author-text">
+                        Hongbeen Park 
+                        <!-- <sup>1,2</sup> -->
+                    </a>
+                </div>
+                <div class="base-col author-col">
+                    <a href="https://visionai.korea.ac.kr" target="_blank" class="author-text">
+                        Jinkyu Kim 
+                        <!-- <sup>1,2</sup> -->
+                    </a>
+                </div>
+     
+            </div>
+            <div class="base-row author-row">
+                <div class="base-col author-col affiliations">
+                    Korea University
+                </div>
+            </div>
+            <div class="link-labels base-row">
+                <div class="base-col icon-col"><a href="https://arxiv.org/abs/2506.01411" target="_blank"
+                        class="link-block">
+                        <i class="fa fas fa-file-text main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Paper</strong>
+                    </a></div>
+                <!-- <div class="base-col icon-col"><a href='https://describe-anything.github.io/'
+                        class="link-block">
+                        <i class="fa fa-home main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Project Page</strong>
+                    </a></div> -->
+                <!-- <div class="base-col icon-col"><a href='#video'
+                        class="link-block">
+                        <i class="fa fa-video-camera main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Video</strong>
+                    </a></div> -->
+                <!-- <div class="base-col icon-col"><a href='https://huggingface.co/spaces/nvidia/describe-anything-model-demo'
+                        class="link-block">
+                        <i class="fa fa-cube main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Interactive Demo</strong>
+                    </a></div> -->
+                <div class="base-col icon-col"><a href='https://github.com/mlnjeongpark/ViTA-PAR' class="link-block">
+                        <i class="fa fa-github main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Code</strong>
+                    </a></div>
+                <!-- <div class="base-col icon-col"><a href="https://huggingface.co/collections/nvidia/describe-anything-680825bb8f5e41ff0785834c"
+                        class="link-block">
+                        <i class="fa fa-database main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Models/Data/Benchmark</strong>
+                    </a></div> -->
+                <div class="base-col icon-col"><a href="#citation" class="link-block">
+                        <i class="fa fa-graduation-cap main-icon" style="font-size: 60px"></i>
+                        <strong class="link-labels-text">Citation</strong>
+                    </a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="tldr">
+                <b>TL;DR</b>: We introduce visual attribute prompts that capture global-to-local semantics,
+                enabling diverse attribute representations. To enrich textual
+                embeddings, we design a learnable prompt template, termed
+                person and attribute context prompting, to learn person and
+                attributes context. Finally, we align visual and textual attribute features for effective fusion.
+            </div>
+            
+            
+            
+
+            <section id="overview" class="section">
+                <h2>Overview</h2>
+
+                <p>Pedestrian attribute recognition (PAR) models are trained to
+                    recognize diverse visual attributes of pedestrians, such as age,
+                    gender, clothing, and personal belongings. Such PAR models play a critical role in various computer vision applications, including intelligent video surveillance, person retrieval, and person re-identification.</p>
+                <div class="image-container">
+                    <div class="image-content">
+                        <img src="images/teaser.png" class="img large-image">
+                    </div>
+                    <p class="image-caption"><strong>(a)</strong> VTB uses ViT and BERT as feature extractors, resulting in separate representation spaces that hinder direct modality fusion. Moreover, the class token, trained with long-range attention, struggles to capture fine-grained attributes, as shown
+                        in the CAM visualization of “Hat”. 
+                        <br>
+                        <strong>(b)</strong> PromptPAR leverages CLIP’s shared representation space and optimizes region-aware
+                        prompts by horizontally dividing image patches. However, due to the diverse attribute locations, the region prompt misaligns
+                        with textual embeddings, leading to suboptimal “Hat” predictions. 
+                        <br>
+                        <strong>(c)</strong> To address these issues, we propose visual and textual
+                        attribute prompts with visual-textual alignment. Our approach effectively captures “hat” despite its dynamic location, as evidenced by CAM results and a higher confidence score than (a) and (b).</p>
+                </div>
+
+                <p>To capture coarse-to-fine attributes that are dynamically
+                    located in the image and make full use of pre-trained knowledge of CLIP in PAR, this paper presents a <strong>Visual and Textual
+                    Attribute Alignment for Pedestrian Attribute Recognition </strong>
+                    framework, dubbed as <strong>ViTA-PAR</strong>.</p>
+                
+
+
+            <section id="architecture" class="section">
+                <h2>Architecture of ViTA-PAR</h2>
+
+
+                <div class="image-container">
+                    <img src="images/main.png"
+                        class="image-item img large-image z-depth-1">
+                    <p class="image-caption">ViTA-PAR introduces visual and textual attribute prompts to capture coarse-to-fine attribute
+                        cues and align them within a shared embedding space through visual-textual attribute alignment. Note that, during testing, only
+                        the image is fed into the visual encoder, excluding textual features, which leads to reduced computational cost.</p>
+                </div>
+                <p>We introduce <b>visual attribute prompt</b>
+                     to capture coarse-to-fine visual cues and <b>text attribute prompts</b> generated
+                    by the person and attribute context prompting to cover diverse description of person and attribute. We design <b>a visual-text attribute alignment mechanism</b> that aligns each visual attribute embedding with its corresponding textual attribute embedding, enabling the visual attribute features to encapsulate
+                    diverse attribute semantics derived from the text. During inference, we utilize only image features, achieving improved
+                    computational efficiency while maintaining superior performance.</p>
+
+            </section>
+
+            <section id="comparison" class="section">
+                <h2>Experiments</h2>
+
+                <p>We compare proposed ViTA-PAR
+                    with the state-of-the-art methods on four PAR benchmarks.</p>
+
+                <div class="slideshow-container">
+                    <div class="slideshow">
+                        <div class="slide">
+                            <img src="images/table1.png" class="comparison-slideshow-image">
+                            <div class="image-caption">
+                                <b>Performance comparisons with the state-of-the-art methods on PA-100K, PETA, RAPv1 and RAPv2.</b> <br> <b>The best performance</b> is highlighted in <b>bold</b>, and <u>the second highest score</u> is highlighted in <u>underline</u>.“Text Infer.” refers to methods that
+incorporate text during inference. Methods marked with “*” indicate that CLIP is used as the feature extractor.
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/table2.png" class="comparison-slideshow-image">
+                            <div class="image-caption">
+                                <b>Inference time on PA-100K.</b> We
+                                experimented on four samples using a single A6000 GPU and
+                                compared ViTA-PAR with the methods utilizing CLIP as the
+                                feature extractor.
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/table3.png" class="comparison-slideshow-image">
+                            <div class="image-caption">
+                                <b>Ablation study </b> to evaluate the learnable attribute
+                                    prompts on PA-100K.
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/table4.png" class="comparison-slideshow-image">
+                            <div class="image-caption">
+                                <b>Class activation maps for randomly selected images
+                                    from (a) PA-100K, (b) PETA, (c) RAPv1, and (d) RAPv2
+                                    datasets.</b><br> The heatmaps visualize
+                                    the regions of interest for each attribute (e.g., backpack,
+                                    trousers, female, etc.) across the datasets, highlighting the
+                                    most relevant areas to attribute detection (see our method correctly identifies various pedestrian attributes across different
+                                    datasets). Heat maps are color-coded, with red indicating a
+                                    high response and blue indicating a low response.
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <button class="slideshow-nav prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="slideshow-nav next" onclick="changeSlide(1)">❯</button>
+                    
+                    <div class="slideshow-controls">
+                        <button class="play-pause" onclick="togglePlayPause()">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="citation add-top-padding">
+                <h1 id="citation">Citation</h1>
+                <p> If you use this work or find it helpful, please consider citing: </p>
+                <pre id="codecell0">@INPROCEEDINGS{11084333,
+                    author={Park, Minjeong and Park, Hongbeen and Kim, Jinkyu},
+                    booktitle={2025 IEEE International Conference on Image Processing (ICIP)}, 
+                    title={ViTA-PAR: Visual And Textual Attribute Alignment With Attribute Prompting For Pedestrian Attribute Recognition}, 
+                    year={2025},
+                    volume={},
+                    number={},
+                    pages={31-36},
+                    keywords={Visualization;Pedestrians;Image recognition;Codes;Accuracy;Semantics;Clothing;Benchmark testing;Robustness;Distance measurement;Pedestrian Attribute Recognition;Image-Text Multi-modal Alignment;Prompt Learning},
+                    doi={10.1109/ICIP55913.2025.11084333}}
+                  
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="credit">Credit: The design of this project page is inspired by previous academic project pages, such as <a href="https://describe-anything.github.io/" target="_blank">Describe-Anything</a> and <a href="https://llm-grounded-diffusion.github.io/" target="_blank">LLM-grounded Diffusion</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+    function toggleMute(element) {
+        const video = element.parentElement.querySelector('video');
+        const icon = element.querySelector('i');
+        const text = element.querySelector('.unmute-text');
+        
+        if (video.muted) {
+            video.muted = false;
+            icon.className = 'fa fa-volume-up';
+            text.textContent = 'Mute';
+        } else {
+            video.muted = true;
+            icon.className = 'fa fa-volume-off';
+            text.textContent = 'Click to unmute';
+        }
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.addEventListener('play', function() {
+                const overlay = this.parentElement.querySelector('.unmute-overlay');
+                if (overlay) overlay.style.opacity = '0.8';
+            });
+            
+            video.addEventListener('pause', function() {
+                const overlay = this.parentElement.querySelector('.unmute-overlay');
+                if (overlay) overlay.style.opacity = '0.8';
+            });
+        });
+
+        // Initialize all slideshows
+        document.querySelectorAll('.slideshow-container').forEach(container => {
+            const slideshow = container.querySelector('.slideshow');
+            const slides = slideshow.querySelectorAll('.slide');
+            const prevButton = container.querySelector('.slideshow-nav.prev');
+            const nextButton = container.querySelector('.slideshow-nav.next');
+            const playPauseButton = container.querySelector('.play-pause');
+            
+            let currentSlide = 0;
+            let autoplayInterval;
+            let isPlaying = true;
+
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+
+            function changeSlide(n) {
+                showSlide(currentSlide + n);
+                resetAutoplay();
+            }
+
+            function togglePlayPause() {
+                if (isPlaying) {
+                    clearInterval(autoplayInterval);
+                    playPauseButton.innerHTML = '<i class="fa fa-play"></i>';
+                } else {
+                    startAutoplay();
+                    playPauseButton.innerHTML = '<i class="fa fa-pause"></i>';
+                }
+                isPlaying = !isPlaying;
+            }
+
+            function startAutoplay() {
+                autoplayInterval = setInterval(() => {
+                    showSlide(currentSlide + 1);
+                }, 5000);
+            }
+
+            function resetAutoplay() {
+                clearInterval(autoplayInterval);
+                if (isPlaying) {
+                    startAutoplay();
+                }
+            }
+
+            // Initialize this slideshow
+            showSlide(0);
+            startAutoplay();
+
+            // Add event listeners
+            prevButton.addEventListener('click', () => changeSlide(-1));
+            nextButton.addEventListener('click', () => changeSlide(1));
+            playPauseButton.addEventListener('click', togglePlayPause);
+        });
+
+        // Handle main video play button
+        const mainVideo = document.querySelector('.main-video');
+        const playButton = document.querySelector('.play-button-overlay');
+        
+        if (mainVideo && playButton) {
+            // Click play button to play video
+            playButton.addEventListener('click', () => {
+                mainVideo.play();
+                mainVideo.classList.add('playing');
+            });
+
+            // Handle video play/pause events
+            mainVideo.addEventListener('play', () => {
+                mainVideo.classList.add('playing');
+            });
+
+            mainVideo.addEventListener('pause', () => {
+                mainVideo.classList.remove('playing');
+            });
+
+            mainVideo.addEventListener('ended', () => {
+                mainVideo.classList.remove('playing');
+            });
+        }
+    });
+    </script>
+</body>
+</html>
