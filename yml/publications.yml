@@ -1,7 +1,7 @@
 publications:
   - image: "assets/img/paper/OAPR.png"
     title: "Open-Attribute Recognition for Person Retrieval: Finding People Through Distinctive and Novel Attributes"
-    link: "https://arxiv.org/pdf/2508.01389"
+    link: "assets/paper/OAPR.pdf"
     authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Sangwon Lee, Yoonha Jang, Jinkyu Kim"
     conference: "arXiv preprint, 2025"
     label: "arXiv 2025"
