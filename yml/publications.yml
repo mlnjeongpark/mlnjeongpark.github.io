@@ -1,4 +1,14 @@
 publications:
+  - image: "assets/img/paper/PACS.png"
+    title: "Fast and Precise Multimodal SpatioTemporal Calibration via Periodic-Activated 2D Gaussian Splatting"
+    link: "https://openreview.net/forum?id=Gx4GXvh2y9"
+    authors: "Hongbeen Park*, <strong>Minjeong Park*</strong>,  Sunpil Kim, Jinkyu Kim, Jung Hyun Lee"
+    conference: "International Conference on Computer Vision (<strong>ICCV</strong>) Wild3D Workshop, 2025"
+    label: "ICCVW Wild3D 2025"
+    code:
+    project: 
+    description: >
+
   - image: "assets/img/paper/OAPR.png"
     title: "Open-Attribute Recognition for Person Retrieval: Finding People Through Distinctive and Novel Attributes"
     link: "assets/paper/OAPR.pdf"
