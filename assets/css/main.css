@@ -376,7 +376,7 @@ animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
     position: relative;
 }
 #hello {
-    background-color: white;
+    /* background-color: white; */
     color: black;
     font-size: 1.2em
 }

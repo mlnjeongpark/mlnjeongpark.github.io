@@ -11,7 +11,7 @@ export async function loadAward() {
         <li>
         <div class="publication-item">
           <div class="publication-content">
-            <p class="award-title"><strong>${pub.title}</strong></p>
+            <p class="award-title"; style="color:#2e3971"><strong>${pub.title}</strong></p>
             <p class="authors">${pub.authors}</p>
             <p class="date">${pub.date}</p>
           </div>
