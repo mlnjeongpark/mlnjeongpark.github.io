@@ -3,3 +3,8 @@ projects:
     link: "../projects/ViTA-PAR"
     authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Jinkyu Kim"
     conference: "IEEE International Conference on Image Processing (<b>ICIP</b>), 2025"
+
+  - title: "Open-Attribute Person Retrieval: Finding People Through Distinctive and Novel Attributes"
+    link: "../projects/OpenAttributePersonRetrieval"
+    authors: "<strong>Minjeong Park</strong>, Hongbeen Park, Sangwon Lee, Jinkyu Kim"
+    conference: "arXiv"
